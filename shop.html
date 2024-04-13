@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel=“stylesheet” href=“shop.css”>
+        <script src="shop.js"></script>
+        <title>Menu/Shop Page</title>
+    </head>
+    <body>
+        <nav class=“nav-list”>
+            <ul>
+                <li><a href=“#hot-drinks”>Hot Drinks</a></li>
+                <li><a href=“#cold-drinks”>Cold Drinks</a></li>
+                <li><a href=“#pasteries”>Pastries</a></li>
+                <li><a href=“#add-ons”>Add Ons</a></li>
+            </ul>
+        </nav>
+        <section id=“hot-drinks”>
+            <div class=“image-container”>
+                <a href=“#hot-drinks”>
+                <img src=“hot coffee.jpeg” alt=“Hot Drinks”>
+            </a>
+            </div>
+            <div id="menu">
+                <button onclick="addToCart('Latte', 4.50)">Add to Cart</button>
+                <h3>Latte</h3>
+                <p>$4.50</p>
+            </div>
+            <div id="menu">
+                <button onclick="addToCart('Cappuccino', 4.50)">Add to Cart</button>
+                <h3>Cappuccino</h3>
+                <p>$4.50</p>
+            </div>
+            <div id="menu">
+                <button onclick="addToCart('Espresso', 3.50)">Add to Cart</button>
+                <h3>Espresso</h3>
+                <p>$3.50</p>
+            </div>
+            <div id="menu">
+                <button onclick="addToCart('Mocha', 5.25)">Add to Cart</button>
+                <h3>Mocha</h3>
+                <p>$5.25</p>
+            </div>
+        </section>
+        <section id=“#cold-drinks”>
+            <div class=“image-container”>
+                <img src=“colddrink.jpeg” alt=“Cold Drinks”>
+            </div>
+            <div id="menu">
+                <button onclick="addToCart('Matcha Latte', 5.50)">Add to Cart</button>
+                <h3>Matcha Latte</h3>
+                <p>$5.50</p>
+            </div>
+            <div id="menu">
+                <button onclick="addToCart('Cold Brew', 4.50)">Add to Cart</button>
+                <h3>Cold Brew</h3>
+                <p>$4.50</p>
+            </div>
+            <div id="menu">
+                <button onclick="addToCart('Frappe', 6.50)">Add to Cart</button>
+                <h3>Frappe</h3>
+                <p>$6.50</p>
+            </div>
+        </section>
+        <section id=“#pastries”>
+            <div class=“image-container”>
+                 <img src=“croissant.jpeg” alt=“Croissant”>
+            </div>
+            <div id="menu">
+                <button onclick="addToCart('Croissant', 7.00)">Add to Cart</button>
+                <h3>Croissant</h3>
+                <p>$7.00</p>
+            </div>
+            <div id="menu">
+                <button onclick="addToCart('Muffin', 4.50)">Add to Cart</button>
+                <h3>Muffin</h3>
+                <p>$4.50</p>
+            </div>
+            <div id="menu">
+                <button onclick="addToCart('Scone', 6.50)">Add to Cart</button>
+                <h3>Scone</h3>
+                <p>$6.50</p>
+            </div>
+        </section>
+        <section id=“#add-ons”>
+            <div class=“image-container”>
+                 <img src=“addons.jpeg” alt=“Add Ons”>
+            </div>
+        </section>
+        <script src=“shop.js”></script>
+    </body>
+</html>

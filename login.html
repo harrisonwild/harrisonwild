@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="shop.js"></script>
+    <title class="title">Cool Beanz</title>
+    <script>
+        function login() {
+            var fullName = prompt("Please enter your full name (first name last name):");
+            if (fullName != null && fullName.trim() !== "") {
+                alert("Welcome, " + fullName + "!");
+                // Here you can perform additional actions after the user has logged in, such as storing their name or redirecting them to another page.
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="beans.webp" alt="logo" id="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="/pages/about-us.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="right"><a href="#" onclick="login()">Login</a></li> <!-- Added onclick event for the login function -->
+                <li class="right">
+                    <a href="#">
+                        Shopping Cart
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h3>Contact Us!</h3>
+        <form action="process-form.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="about-us">
+            <a href="/pages/about-us.html">About Us</a>
+        </div>
+        <div class="address">
+            <i class="fas fa-address-card"></i>
+            <div class="item">1313 Dead End Drive, Oklahoma City, OK 73108</div>
+        </div>
+        <div class="hours">
+            <a>Hours:</a>
+            <i class="far fa-clock"></i>
+            <div class="item">M - F 6a - 6p</div>
+            <div class="item">SAT 7a - 6p</div>
+            <div class="item">SUN closed</div>
+        </div>
+        <div class="follow">
+            <a>Follow:</a>
+            <div class="social-media">Instagram</div>
+            <i class="fab fa-instagram"></i>
+            <div class="social-media">Facebook</div>
+            <i class="fab fa-facebook"></i>
+            <div class="social-media">Twitter</div>
+            <i class="fab fa-twitter"></i>
+        </div>
+    </footer>
+</body>
+</html>
